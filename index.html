@@ -9,24 +9,135 @@
 </head>
 
 <body>
-  <header>
+  <header class="main-header">
     <nav class="main-navigation" aria-label="Навигация по сайту">
       <ul class="header-site-navigation">
         <li class="logo">Cakes</li>
-        <li>Наши торты</li>
-        <li>Индивидуальный заказ</li>
-        <li>Отзывы</li>
-        <li>О нас</li>
-        <li>Как заказать</li>
-        <li>Контакты</li>
+        <li>
+          <a href="#our-cakes">Наши торты</a>
+        </li>
+        <li>
+          <a href="#individual-order">Индивидуальный заказ</a>
+        </li>
+        <li>
+          <a href="#">Отзывы</a>
+        </li>
+        <li>
+          <a href="#">О нас</a>
+        </li>
+        <li>
+          <a href="#">Как заказать</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
       </ul>
     </nav>
     <ul class="header-contacts">
       <li>+7 906 899 92 96</li>
     </ul>
   </header>
-  <main>
+  <main class="container">
+    <section class="cafe-description">
+      <h1 class="cafe-description-title">Торты нв заказ</h1>
+      <span class="cafe-description-handmade">Ручная работа</span>
+      <a class="button button-choice">Выбрать торт</a>
+      <ul class="cafe-advantage">
+        <li class="cafe-advantage-item cafe-advantage-ingridient">Натуральные ингредиенты</li>
+        <li class="cafe-advantage-item cafe-advantage-delivery">Доставка бесплатно при заказе от 2000 рублей</li>
+      </ul>
+      <img class="cafe-main-image" src="" width="" height="" alt="Торт клубничный">
+    </section>
+    <section class="cafe-assortment">
+      <h2 id="our-cakes" class="cafe-assortment-title">Наши торты</h2>
+      <ul class="cafe-assortment-list">
+        <li class="cafe-assortment-item cafe-assortment-classic">
+          <h3 class="cakes-title">Классические</h3>
+          <span class="cakes-types">24 вида</span>
+          <img class="cakes-image" src="" width="" height="" alt="Классический торт">
+          <a href="" class="cakes-info">
+            <span>Смотреть</span>
+          </a>
+        </li>
+        <li class="cafe-assortment-item cafe-assortment-muss">
+          <h3 class="cakes-title">Муссовые</h3>
+          <span class="cakes-types">12 видов</span>
+          <img class="cakes-image" src="" width="" height="" alt="Муссовый торт">
+          <a href="" class="cakes-info">
+            <span class="visually-hidden">Смотреть</span>
+          </a>
+        </li>
+        <li class="cafe-assortment-item cafe-assortment-wedding">
+          <h3 class="cakes-title">Свадебные</h3>
+          <span class="cakes-types">20 видов</span>
+          <img class="cakes-image" src="" width="" height="" alt="Свадебный торт">
+          <a href="" class="cakes-info">
+            <span class="visually-hidden">Смотреть</span>
+          </a>
+        </li>
+        <li class="cafe-assortment-item cafe-assortment-mens">
+          <h3 class="cakes-title">Мужчинам</h3>
+          <span class="cakes-types">12 видов</span>
+          <img class="cakes-image" src="" width="" height="" alt="Торт для мужчин">
+          <a href="" class="cakes-info">
+            <span class="visually-hidden">Смотреть</span>
+          </a>
+        </li>
+        <li class="cafe-assortment-item cafe-assortment-womens">
+          <h3 class="cakes-title">Женщинам</h3>
+          <span class="cakes-type">16 видов</span>
+          <img class="cakes-image" src="" width="" height="" alt="Торт для женщин">
+          <a href="" class="cakes-info">
+            <span class="visually-hidden">Смотреть</span>
+          </a>
+        </li>
+        <li class="cafe-assortment-item cafe-assortment-childs">
+          <h3 class="cakes-title">Детские</h3>
+          <span class="cakes-type">18 видов</span>
+          <img class="cakes-image" src="" width="" height="" alt="Торт для детей">
+          <a href="" class="cakes-info">
+            <span class="visually-hidden">Смотреть</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="custom-cakes">
+      <h2 id="individual-order" class="custom-cakes-titel">Индивидуальный заказ</h2>
+      <span class="custom-cakes-steps">Соберите торт в 3 шага</span>
+      <ul class="steps-list">
+        <li class="steps-item">
+          <h3 class="steps-title">Начинка</h3>
+          <img class="cake-filling-image" src="" width="" height="" alt="Шоколадный ганаш">
+          <h4>Шоколадный ганаш</h4>
+          <p>Ароматный шоколадный бисквит, густой шоколадный крем &mdash; самый шоколадный из всех возможных десертов!</p>
+          <b class="cake-filling-price">1000 руб/кг</b>
+          <button class="button button-filling">Выбрать</button>
+        </li>
+        <li class="steps-item">
+          <h3 class="steps-title">Размер</h3>
+          <p class="cake-size">
+            <span class="cake-size-tiny">1 кг</span>
+            <span>17-18 см (6 персон)</span>
+          </p>
+          <p class="cake-size">
+            <span class="cake-size-small">2кг</span>
+            <span>23-24 см (10-12 персон)</span>
+          </p>
+          <p class="cake-size">
+            <span class="cake-size-normal">5 кг</span>
+            <span>Два яруса 25 и 20 см (15-20 персон)</span>
+          </p>
+          <p class="cake-size">
+            <span class="cake-size-big">8 кг</span>
+            <span>Три яруса 30, 25 и 18 см (25-30 персон)</span>
+          </p>
+        </li>
+        <li class="steps-item">
+          <h3 class="steps-title">Оформление</h3>
 
+        </li>
+      </ul>
+    </section>
   </main>
   <footer>
 
