@@ -4,364 +4,396 @@
 <head>
   <meta charset="utf-8">
   <title>Cakes</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation" aria-label="Навигация по сайту">
-      <ul class="header-site-navigation">
-        <li class="logo">Cakes</li>
-        <li>
-          <a href="#our-cakes">Наши торты</a>
-        </li>
-        <li>
-          <a href="#individual-order">Индивидуальный заказ</a>
-        </li>
-        <li>
-          <a href="#feedbacks">Отзывы</a>
-        </li>
-        <li>
-          <a href="#about-us">О нас</a>
-        </li>
-        <li>
-          <a href="#">Как заказать</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
+    <div class="container navigation-positioner">
+      <nav class="main-navigation" aria-label="Навигация по сайту">
+        <ul class="header-site-navigation">
+          <li class="logo">Cakes</li>
+          <li>
+            <a class="site-navigation-link" href="#our-cakes" aria-label="Ссылка на торты компании">Наши торты</a>
+          </li>
+          <li>
+            <a class="site-navigation-link" href="#individual-order" aria-label="Ссылка на индивидуальный заказ" active>Индивидуальный заказ</a>
+          </li>
+          <li>
+            <a class="site-navigation-link" href="#feedbacks" aria-label="Ссылка на отзывы">Отзывы</a>
+          </li>
+          <li>
+            <a class="site-navigation-link" href="#about-us" aria-label="Ссылка на раздел с информацией о компании">О нас</a>
+          </li>
+          <li>
+            <a class="site-navigation-link" href="#" aria-label="Ссылка для инструкции с заказом">Как заказать</a>
+          </li>
+          <li>
+            <a class="site-navigation-link" href="#" aria-label="Ссылк на контакты компании">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header-contacts">
+        <li class="header-contacts-telephone">+7 906 899 92 96</li>
       </ul>
-    </nav>
-    <ul class="header-contacts">
-      <li class="header-contacts-telephone">+7 906 899 92 96</li>
-    </ul>
+    </div>
   </header>
-  <main class="container">
+
+  <main>
     <section class="cafe-description">
-      <h1 class="cafe-description-title">Торты на заказ</h1>
-      <span class="additional-info cafe-description-handmade">Ручная работа</span>
-      <a class="button button-choice">Выбрать торт</a>
-      <ul class="cafe-advantage">
-        <li class="cafe-advantage-item cafe-advantage-ingridient">Натуральные ингредиенты</li>
-        <li class="cafe-advantage-item cafe-advantage-delivery">Доставка бесплатно при заказе от 2000 рублей</li>
-      </ul>
-      <img class="cafe-main-image" src="" width="" height="" alt="Торт клубничный">
+      <div class="container">
+        <h1 class="cafe-description-title">Торты на заказ</h1>
+        <span class="additional-info cafe-description-handmade">Ручная работа</span>
+        <a class="button button-choice" aria-label="Копка Выбрать торт">Выбрать торт</a>
+        <ul class="cafe-advantage">
+          <li class="cafe-advantage-item cafe-advantage-ingridient">Натуральные ингредиенты</li>
+          <li class="cafe-advantage-item cafe-advantage-delivery">Доставка бесплатно при&#160;заказе от 2000 рублей</li>
+        </ul>
+        <img class="cafe-main-image" src="img/main-cake.png" width="800" height="800" alt="Торт клубничный">
+      </div>
     </section>
+
     <section class="cafe-assortment">
-      <h2 id="our-cakes" class="section-title">Наши торты</h2>
-      <ul class="cafe-assortment-list">
-        <li class="cafe-assortment-item cafe-assortment-classic">
-          <h3 class="cakes-title">Классические</h3>
-          <span class="cakes-types">24 вида</span>
-          <img class="cakes-image" src="" width="" height="" alt="Классический торт">
-          <a href="" class="cakes-info">
-            <span>Смотреть</span>
-          </a>
-        </li>
-        <li class="cafe-assortment-item cafe-assortment-muss">
-          <h3 class="cakes-title">Муссовые</h3>
-          <span class="cakes-types">12 видов</span>
-          <img class="cakes-image" src="" width="" height="" alt="Муссовый торт">
-          <a href="" class="cakes-info">
-            <span class="visually-hidden">Смотреть</span>
-          </a>
-        </li>
-        <li class="cafe-assortment-item cafe-assortment-wedding">
-          <h3 class="cakes-title">Свадебные</h3>
-          <span class="cakes-types">20 видов</span>
-          <img class="cakes-image" src="" width="" height="" alt="Свадебный торт">
-          <a href="" class="cakes-info">
-            <span class="visually-hidden">Смотреть</span>
-          </a>
-        </li>
-        <li class="cafe-assortment-item cafe-assortment-mens">
-          <h3 class="cakes-title">Мужчинам</h3>
-          <span class="cakes-types">12 видов</span>
-          <img class="cakes-image" src="" width="" height="" alt="Торт для мужчин">
-          <a href="" class="cakes-info">
-            <span class="visually-hidden">Смотреть</span>
-          </a>
-        </li>
-        <li class="cafe-assortment-item cafe-assortment-womens">
-          <h3 class="cakes-title">Женщинам</h3>
-          <span class="cakes-type">16 видов</span>
-          <img class="cakes-image" src="" width="" height="" alt="Торт для женщин">
-          <a href="" class="cakes-info">
-            <span class="visually-hidden">Смотреть</span>
-          </a>
-        </li>
-        <li class="cafe-assortment-item cafe-assortment-childs">
-          <h3 class="cakes-title">Детские</h3>
-          <span class="cakes-type">18 видов</span>
-          <img class="cakes-image" src="" width="" height="" alt="Торт для детей">
-          <a href="" class="cakes-info">
-            <span class="visually-hidden">Смотреть</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="custom-cakes">
-      <h2 id="individual-order" class="section-title">Индивидуальный заказ</h2>
-      <span class="additional-info custom-cakes-steps">Соберите торт в 3 шага</span>
-      <form>
-        <section class="steps-item">
-          <h3 class="steps-title">Начинка</h3>
-          <div class="filling-slider-controls">
-            <div class="filling-slider-btn slider-btn-1" tabindex="0"></div>
-            <div class="filling-slider-btn slider-btn-2" tabindex="0"></div>
-          </div>
-          <section class="filling-slider-slide filling-slide-1 filling-slide-active">
-            <img class="cake-filling-image" src="" width="" height="" alt="Шоколадный ганаш">
-            <h4>Шоколадный ганаш</h4>
-            <p>Ароматный шоколадный бисквит, густой шоколадный крем &mdash; самый шоколадный из всех возможных десертов!</p>
-            <b class="cake-filling-price">1000 руб/кг</b>
-            <button type="button" class="button button-filling">Выбрать</button>
-          </section>
-          <section class="filling-slider-slide filling-slide-2">
-            <img class="cake-filling-image" src="" width="" height="" alt="Шоколадный ганаш">
-            <h4>Клубничный мусс</h4>
-            <p>Нежный классический бисквит и воздушный клубничный мусс понравится всем без исключения!</p>
-            <b class="cake-filling-price">800 руб/кг</b>
-            <button type="button" class="button button-filling">Выбрать</button>
-          </section>
-          <section class="filling-slider-slide filling-slide-3">
-            <img class="cake-filling-image" src="" width="" height="" alt="Шоколадный ганаш">
-            <h4>Лимонный фреш</h4>
-            <p>Классический бисквит, освежающий лимонный курд украсит праздник любого гурмана</p>
-            <b class="cake-filling-price">1000 руб/кг</b>
-            <button type="button" class="button button-filling">Выбрать</button>
-          </section>
-        </section>
-        <section class="steps-item">
-          <h3 class="steps-title">Размер</h3>
-          <p class="cake-size">
-            <label class="cake-size-tiny">1 кг
-              <input class="visually-hidden" type="radio" name="size">
-            </label>
-            <span>17-18 см (6 персон)</span>
-          </p>
-          <p class="cake-size">
-            <label class="cake-size-small">2кг
-              <input class="visually-hidden" type="radio" name="size">
-            </label>
-            <span>23-24 см (10-12 персон)</span>
-          </p>
-          <p class="cake-size">
-            <label class="cake-size-normal">5 кг
-              <input class="visually-hidden" type="radio" name="size">
-            </label>
-            <span>Два яруса 25 и 20 см (15-20 персон)</span>
-          </p>
-          <p class="cake-size">
-            <label class="cake-size-big">8 кг
-              <input class="visually-hidden" type="radio" name="size">
-            </label>
-            <span>Три яруса 30, 25 и 18 см (25-30 персон)</span>
-          </p>
-        </section>
-        <section class="steps-item">
-          <h3 class="steps-title">Оформление</h3>
-          <div class="decoration-slider-controls">
-            <div class="decoration-slider-btn slider-btn-1" tabindex="0"></div>
-            <div class="decoration-slider-btn slider-btn-2" tabindex="0"></div>
-          </div>
-          <p class="decoration-item decoration-berry">
-            <img src="" width="" height="" alt="Ягодное ассорти">
-            <h4 class="decoration-title">Ягодное ассорти</h4>
-            <span class="decoration-price">700 руб/кг</span>
-          </p>
-          <p class="decoration-item decoration-marshmellow">
-            <img src="" width="" height="" alt="Маршмэллоу">
-            <h4 class="decoration-title">Маршмэллоу</h4>
-            <span class="decoration-price">700 руб/кг</span>
-          </p>
-        </section>
-        <section>
-          <h3>Ваш выбор</h3>
-          <p class="custom-filling">
-            <span class="custom-choice-title">Начинка</span>
-            <span class="custom-choice">Шоколадный ганаш</span>
-          </p>
-          <p class="custom-size">
-            <span class="custom-choice-title">Размер</span>
-            <span class="custom-choice">2 кг</span>
-          </p>
-          <p class="custom-decoration">
-            <span class="custom-choice-title">Оформление</span>
-            <span class="custom-choice">Маршмэллоу</span>
-          </p>
-        </section>
-        <button type="submit" class="button custom-choice-button">Заказать торт</button>
-      </form>
-    </section>
-    <section class="feedback">
-      <h2 id="feedbacks" class="section-title">Отзывы</h2>
-      <div class="feedback-slider-controls">
-        <div class="feedback-slider-btn slider-btn-1" tabindex="0"></div>
-        <div class="feedback-slider-btn slider-btn-2" tabindex="0"></div>
-      </div>
-      <section class="customer-feedback customer-feedback-1">
-        <img src="" class="customer-photo" width="" height="" alt="Фотография клиента Марии">
-        <b class="customer-name">Мария</b>
-        <span class="customer-info">юрист, 33 года</span>
-        <p class="customer-review">Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь
-          будем заказывать торты только у вас для наших семейных праздников:)
-        </p>
-        <details>
-          <summary class="feedback-more">Развернуть</summary>
-          <p class="customer-review-more">Мне все очень понравиось</p>
-        </details>
-      </section>
-      <section class="customer-feedback customer-feedback-2">
-        <img src="" class="customer-photo" width="" height="" alt="Фотография клиента Петра">
-        <b class="customer-name">Петр</b>
-        <span class="customer-info">журналист, 43 года</span>
-        <p class="customer-review">Заказывал торт брауни.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать
-          торты только у вас для наших семейных праздников:)
-        </p>
-        <details>
-          <summary class="feedback-more">Развернуть</summary>
-          <p class="customer-review-more">Мне все очень понравиось</p>
-        </details>
-      </section>
-      <section class="customer-feedback customer-feedback-3">
-        <img src="" class="customer-photo" width="" height="" alt="Фотография клиента Васи">
-        <b class="customer-name">Вася</b>
-        <span class="customer-info">студент, 18 лет</span>
-        <p class="customer-review">Заказывал торт лимоный на свой др.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем
-          заказывать торты только у вас для наших семейных праздников:)
-        </p>
-        <details>
-          <summary class="feedback-more">Развернуть</summary>
-          <p class="customer-review-more">Мне все очень понравиось</p>
-        </details>
-      </section>
-    </section>
-    <section class="company-info">
-      <h2 id="about-us" class="section-title">О нас</h2>
-      <span class="additional-info pastry-chef">О кондитере</span>
-      <dl class="company-info-list pastry-chef-info">
-        <dt class="company-info-motto">Кондитер &mdash; как призвание</dt>
-        <dd class="company-info-description">Павел &mdash; профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское
-          искусство. С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.
-        </dd>
-        <dt class="company-info-motto">Принцип &mdash; натуральные ингредиенты</dt>
-        <dd class="company-info-description">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества,
-          а главным принципом является выбор натуральных ингредиентов.
-        </dd>
-      </dl>
-      <ul class="company-social">
-        <li class="company-social-button social-instagram">
-          <a href="#" aria-label="Ссылка на страницу компании в инстаграме">
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
-        <li class="company-social-button social-vk">
-          <a href="#" aria-label="Ссылка на страницу компании во вконтакте">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="company-social-button social-twitter">
-          <a href="#" aria-label="Ссылка на страницу компании в твиттере">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-      </ul>
-      <img src="" width="" height="" alt="Фотография главного кондитера Павла">
-      <blockquote class="pastry-chef-quote">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.
-      </blockquote>
-    </section>
-    <section class="company-advantages">
-      <h2 class="section-title">Наши преимущества</h2>
-      <span class="additional-info reasons">Почему нас выбирают?</span>
-      <dl class="company-info-list ">
-        <dt class="company-info-motto">Без искусственных добавок</dt>
-        <dd class="company-info-description">Работаем с натуральными ингредиентами и свежими продуктами</dd>
-        <dt class="company-info-motto">Свежий торт в день торжества</dt>
-        <dd class="company-info-description">Торты изготавливаются в течение суток до отправки</dd>
-        <dt class="company-info-motto">Забота о клиентах</dt>
-        <dd class="company-info-description">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас
-          и для вашего события.</dd>
-      </dl>
-    </section>
-    <section class="order">
-      <h2 class="section-title section-order-title">Как заказать</h2>
-      <!--Изменить раздел, так как называется как заказать, а все про доставку и сроки. Вообще не в тему-->
-      <ol class="order-list">
-        <li class="order-item order-terms">
-          <b class="company-info-motto">Срок заказа</b>
-          <p class="company-info-description">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
-        </li>
-        <li class="order-item order-city-delivery">
-          <b class="company-info-motto">Доставка по городу</b>
-          <p class="company-info-description">Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</p>
-        </li>
-        <li class="order-item order-delivery">
-          <b class="company-info-motto">Доставка за городом</b>
-          <p class="company-info-description">Доставка за пределами города рассчитывается индивидуально.</p>
-        </li>
-      </ol>
-    </section>
-    <section class="contacts">
-      <h2 class="section-title section-contacts-title">Контакты</h2>
-      <span class="additional-info">Остались вопросы?</span>
-      <div>
-        <span class="">Заполните форму ниже и наш кондитер свяжется с Вами</span>
-        <form class="question-form">
-          <label class="visually-hidden">Ваше имя
-            <input type="text" name="name" placeholder="Ваше имя">
-          </label>
-          <label class="visually-hidden">Email адрес
-            <input type="text" name="email" placeholder="Email адрес">
-          </label>
-          <label class="visually-hidden">Ваш вопрос
-            <input type="text" name="question" placeholder="Ваш вопрос">
-          </label>
-          <button class="button question-form-button" type="submit">Отправить</button>
-        </form>
-      </div>
-      <div>
-        <p>Или позвоните по телефону:</br>
-          +7 906 899 92 96
-        </p>
-        <p>Наша почта: bakerybypavel@mail.ru</p>
-        <p>Мы в соц. сетях:</p>
-        <ul class="contacts-social">
-          <li class="contacts-social-button contacts-social-instagram">
-            <a href="#" aria-label="Ссылка на страницу компании в инстаграме">
-              <span class="visually-hidden">Инстаграм</span>
+      <div class="container">
+        <h2 id="our-cakes" class="section-title">Наши торты</h2>
+        <ul class="cafe-assortment-list">
+          <li class="cafe-assortment-item cafe-assortment-classic">
+            <h3 class="cakes-title">Классические</h3>
+            <span class="cakes-types">24 вида</span>
+            <img class="cakes-image classic-image" src="img/classic-cake.jpg" width="695" height="652" alt="Классический торт">
+            <a href="" class="cakes-info-link big-image-link" aria-label="Кнопка Смотреть классические торты">
+              <span>Смотреть</span>
             </a>
           </li>
-          <li class="contacts-social-button contacts-social-vk">
-            <a href="#" aria-label="Ссылка на страницу компании во вконтакте">
-              <span class="visually-hidden">Вконтакте</span>
+          <li class="cafe-assortment-item cafe-assortment-muss">
+            <h3 class="cakes-title">Муссовые</h3>
+            <span class="cakes-types">12 видов</span>
+            <img class="cakes-image" src="img/muss-cake.jpg" width="490" height="305" alt="Муссовый торт">
+            <a href="" class="cakes-info-link" aria-label="Кнопка Смотреть муссовые торты">
+              <span class="visually-hidden">Смотреть</span>
+            </a>
+          </li>
+          <li class="cafe-assortment-item cafe-assortment-wedding">
+            <h3 class="cakes-title">Свадебные</h3>
+            <span class="cakes-types">20 видов</span>
+            <img class="cakes-image" src="img/wedding-cake.jpg" width="490" height="304" alt="Свадебный торт">
+            <a href="" class="cakes-info-link" aria-label="Кнопка Смотреть свадебные торты">
+              <span class="visually-hidden">Смотреть</span>
+            </a>
+          </li>
+          <li class="cafe-assortment-item cafe-assortment-mens">
+            <h3 class="cakes-title">Мужчинам</h3>
+            <span class="cakes-types">12 видов</span>
+            <img class="cakes-image" src="img/mens-cake.jpg" width="490" height="304" alt="Торт для мужчин">
+            <a href="" class="cakes-info-link" aria-label="Кнопка Смотреть торты для мужчин">
+              <span class="visually-hidden">Смотреть</span>
+            </a>
+          </li>
+          <li class="cafe-assortment-item cafe-assortment-womens">
+            <h3 class="cakes-title">Женщинам</h3>
+            <span class="cakes-type">16 видов</span>
+            <img class="cakes-image" src="img/womens-cake.jpg" width="490" height="304" alt="Торт для женщин">
+            <a href="" class="cakes-info-link" aria-label="Кнопка Смотреть торты для женщин">
+              <span class="visually-hidden">Смотреть</span>
+            </a>
+          </li>
+          <li class="cafe-assortment-item cafe-assortment-childs">
+            <h3 class="cakes-title">Детские</h3>
+            <span class="cakes-type">18 видов</span>
+            <img class="cakes-image childs-image" src="img/childrens-cake.jpg" width="695" height="651" alt="Торт для детей">
+            <a href="" class="cakes-info-link big-image-link" aria-label="Кнопка Смотреть торты для детей">
+              <span class="visually-hidden">Смотреть</span>
             </a>
           </li>
         </ul>
       </div>
     </section>
+
+    <section class="custom-cakes">
+      <div class="container">
+        <h2 id="individual-order" class="section-title">Индивидуальный заказ</h2>
+        <span class="additional-info custom-cakes-steps">Соберите торт в 3 шага</span>
+        <form>
+          <section class="steps-item">
+            <h3 class="steps-title">Начинка</h3>
+            <div class="filling-slider-controls">
+              <div class="filling-slider-btn slider-btn-1" tabindex="0"></div>
+              <div class="filling-slider-btn slider-btn-2" tabindex="0"></div>
+            </div>
+            <section class="filling-slider-slide filling-slide-1 filling-slide-active">
+              <img class="cake-filling-image" src="img/chocolate-filling.jpg" width="343" height="390" alt="Шоколадный ганаш">
+              <h4>Шоколадный ганаш</h4>
+              <p>Ароматный шоколадный бисквит, густой шоколадный крем &mdash; самый шоколадный из всех возможных десертов!</p>
+              <b class="cake-filling-price">1000 руб/кг</b>
+              <button type="button" class="button button-filling" data-hover="Выбрать">Выбрать</button>
+            </section>
+            <section class="filling-slider-slide filling-slide-2">
+              <img class="cake-filling-image" src="img/strawberry-filling.jpg" width="343" height="390" alt="Клубничный мусс">
+              <h4>Клубничный мусс</h4>
+              <p>Нежный классический бисквит и воздушный клубничный мусс понравится всем без исключения!</p>
+              <b class="cake-filling-price">800 руб/кг</b>
+              <button type="button" class="button button-filling" data-hover="Выбрать">Выбрать</button>
+            </section>
+            <section class="filling-slider-slide filling-slide-3">
+              <img class="cake-filling-image" src="img/lemon-filling.jpg" width="343" height="390" alt="Лимонный фреш">
+              <h4>Лимонный фреш</h4>
+              <p>Классический бисквит, освежающий лимонный курд украсит праздник любого гурмана</p>
+              <b class="cake-filling-price">1000 руб/кг</b>
+              <button type="button" class="button button-filling" data-hover="Выбрать">Выбрать</button>
+            </section>
+          </section>
+          <section class="steps-item">
+            <h3 class="steps-title">Размер</h3>
+            <p class="cake-size">
+              <label class="cake-size-tiny">1 кг
+                <input class="visually-hidden" type="radio" name="size">
+              </label>
+              <span>17-18 см (6 персон)</span>
+            </p>
+            <p class="cake-size">
+              <label class="cake-size-small">2кг
+                <input class="visually-hidden" type="radio" name="size">
+              </label>
+              <span>23-24 см (10-12 персон)</span>
+            </p>
+            <p class="cake-size">
+              <label class="cake-size-normal">5 кг
+                <input class="visually-hidden" type="radio" name="size">
+              </label>
+              <span>Два яруса 25 и 20 см (15-20 персон)</span>
+            </p>
+            <p class="cake-size">
+              <label class="cake-size-big">8 кг
+                <input class="visually-hidden" type="radio" name="size">
+              </label>
+              <span>Три яруса 30, 25 и 18 см (25-30 персон)</span>
+            </p>
+          </section>
+          <section class="steps-item">
+            <h3 class="steps-title">Оформление</h3>
+            <div class="decoration-slider-controls">
+              <div class="decoration-slider-btn slider-btn-1" tabindex="0"></div>
+              <div class="decoration-slider-btn slider-btn-2" tabindex="0"></div>
+            </div>
+            <p class="decoration-item decoration-berry">
+              <img src="img/berry-decoration.jpg" width="321" height="431" alt="Ягодное ассорти">
+              <h4 class="decoration-title">Ягодное ассорти</h4>
+              <span class="decoration-price">700 руб/кг</span>
+            </p>
+            <p class="decoration-item decoration-marshmellow">
+              <img src="img/marshmallow-decoration.jpg" width="321" height="431" alt="Маршмэллоу">
+              <h4 class="decoration-title">Маршмэллоу</h4>
+              <span class="decoration-price">700 руб/кг</span>
+            </p>
+          </section>
+          <section>
+            <h3>Ваш выбор</h3>
+            <p class="custom-filling">
+              <span class="custom-choice-title">Начинка</span>
+              <span class="custom-choice">Шоколадный ганаш</span>
+            </p>
+            <p class="custom-size">
+              <span class="custom-choice-title">Размер</span>
+              <span class="custom-choice">2 кг</span>
+            </p>
+            <p class="custom-decoration">
+              <span class="custom-choice-title">Оформление</span>
+              <span class="custom-choice">Маршмэллоу</span>
+            </p>
+          </section>
+          <button type="submit" class="button custom-choice-button" data-hover="Заказать торт">Заказать торт</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="container">
+        <h2 id="feedbacks" class="section-title">Отзывы</h2>
+        <div class="feedback-slider-controls">
+          <div class="feedback-slider-btn slider-btn-1" tabindex="0"></div>
+          <div class="feedback-slider-btn slider-btn-2" tabindex="0"></div>
+        </div>
+        <section class="customer-feedback customer-feedback-1">
+          <img src="img/customer-photo.jpg" class="customer-photo" width="401" height="400" alt="Фотография клиента Марии">
+          <b class="customer-name">Мария</b>
+          <span class="customer-info">юрист, 33 года</span>
+          <p class="customer-review">Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь
+            будем заказывать торты только у вас для наших семейных праздников:)
+          </p>
+          <details>
+            <summary class="feedback-more">Развернуть</summary>
+            <p class="customer-review-more">Мне все очень понравиось</p>
+          </details>
+        </section>
+        <section class="customer-feedback customer-feedback-2">
+          <img src="img/customer-photo.jpg" class="customer-photo" width="401" height="400" alt="Фотография клиента Петра">
+          <b class="customer-name">Петр</b>
+          <span class="customer-info">журналист, 43 года</span>
+          <p class="customer-review">Заказывал торт брауни.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать
+            торты только у вас для наших семейных праздников:)
+          </p>
+          <details>
+            <summary class="feedback-more">Развернуть</summary>
+            <p class="customer-review-more">Мне все очень понравиось</p>
+          </details>
+        </section>
+        <section class="customer-feedback customer-feedback-3">
+          <img src="img/customer-photo.jpg" class="customer-photo" width="401" height="400" alt="Фотография клиента Васи">
+          <b class="customer-name">Вася</b>
+          <span class="customer-info">студент, 18 лет</span>
+          <p class="customer-review">Заказывал торт лимоный на свой др.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем
+            заказывать торты только у вас для наших семейных праздников:)
+          </p>
+          <details>
+            <summary class="feedback-more">Развернуть</summary>
+            <p class="customer-review-more">Мне все очень понравиось</p>
+          </details>
+        </section>
+      </div>
+    </section>
+
+    <section class="company-info">
+      <div class="container">
+        <h2 id="about-us" class="section-title">О нас</h2>
+        <span class="additional-info pastry-chef">О кондитере</span>
+        <dl class="company-info-list pastry-chef-info">
+          <dt class="company-info-motto">Кондитер &mdash; как призвание</dt>
+          <dd class="company-info-description">Павел &mdash; профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское
+            искусство. С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.
+          </dd>
+          <dt class="company-info-motto">Принцип &mdash; натуральные ингредиенты</dt>
+          <dd class="company-info-description">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества,
+            а главным принципом является выбор натуральных ингредиентов.
+          </dd>
+        </dl>
+        <ul class="company-social">
+          <li class="company-social-button social-instagram">
+            <a href="#" aria-label="Ссылка на страницу компании в инстаграме">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="company-social-button social-vk">
+            <a href="#" aria-label="Ссылка на страницу компании во вконтакте">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="company-social-button social-twitter">
+            <a href="#" aria-label="Ссылка на страницу компании в твиттере">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+        <img src="img/chefs-photo.jpg" width="809" height="539" alt="Фотография главного кондитера Павла">
+        <blockquote class="pastry-chef-quote">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное
+          блюдо.
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="company-advantages">
+      <div class="container">
+        <h2 class="section-title">Наши преимущества</h2>
+        <span class="additional-info reasons">Почему нас выбирают?</span>
+        <dl class="company-info-list ">
+          <dt class="company-info-motto">Без искусственных добавок</dt>
+          <dd class="company-info-description">Работаем с натуральными ингредиентами и свежими продуктами</dd>
+          <dt class="company-info-motto">Свежий торт в день торжества</dt>
+          <dd class="company-info-description">Торты изготавливаются в течение суток до отправки</dd>
+          <dt class="company-info-motto">Забота о клиентах</dt>
+          <dd class="company-info-description">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас
+            и для вашего события.</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="order">
+      <div class="container">
+        <h2 class="section-title section-order-title">Как заказать</h2>
+        <!--Изменить раздел, так как называется как заказать, а все про доставку и сроки. Вообще не в тему-->
+        <ol class="order-list">
+          <li class="order-item order-terms">
+            <b class="company-info-motto">Срок заказа</b>
+            <p class="company-info-description">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
+          </li>
+          <li class="order-item order-city-delivery">
+            <b class="company-info-motto">Доставка по городу</b>
+            <p class="company-info-description">Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</p>
+          </li>
+          <li class="order-item order-delivery">
+            <b class="company-info-motto">Доставка за городом</b>
+            <p class="company-info-description">Доставка за пределами города рассчитывается индивидуально.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <h2 class="section-title section-contacts-title">Контакты</h2>
+        <span class="additional-info">Остались вопросы?</span>
+        <div>
+          <span class="">Заполните форму ниже и наш кондитер свяжется с Вами</span>
+          <form class="question-form">
+            <label class="visually-hidden">Ваше имя
+              <input type="text" name="name" placeholder="Ваше имя">
+            </label>
+            <label class="visually-hidden">Email адрес
+              <input type="text" name="email" placeholder="Email адрес">
+            </label>
+            <label class="visually-hidden">Ваш вопрос
+              <input type="text" name="question" placeholder="Ваш вопрос">
+            </label>
+            <button class="button question-form-button" type="submit" data-hover="Отправить">Отправить</button>
+          </form>
+        </div>
+        <div>
+          <p>Или позвоните по телефону:</br>
+            +7 906 899 92 96
+          </p>
+          <p>Наша почта: bakerybypavel@mail.ru</p>
+          <p>Мы в соц. сетях:</p>
+          <ul class="contacts-social">
+            <li class="contacts-social-button contacts-social-instagram">
+              <a href="#" aria-label="Ссылка на страницу компании в инстаграме">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="contacts-social-button contacts-social-vk">
+              <a href="#" aria-label="Ссылка на страницу компании во вконтакте">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
+
   <footer class="main-footer">
     <ul class="header-site-navigation">
       <li class="logo">Cakes</li>
       <li>
-        <a href="#our-cakes">Наши торты</a>
+        <a class="site-navigation-link" href="#our-cakes" aria-label="Ссылка на торты компании">Наши торты</a>
       </li>
       <li>
-        <a href="#individual-order">Индивидуальный заказ</a>
+        <a class="site-navigation-link" href="#individual-order" aria-label="Ссылка на индивидуальный заказ">Индивидуальный заказ</a>
       </li>
       <li>
-        <a href="#feedbacks">Отзывы</a>
+        <a class="site-navigation-link" href="#feedbacks" aria-label="Ссылка на отзывы">Отзывы</a>
       </li>
       <li>
-        <a href="#about-us">О нас</a>
+        <a class="site-navigation-link" href="#about-us" aria-label="Ссылка на информацию о компании">О нас</a>
       </li>
       <li>
-        <a href="#">Как заказать</a>
+        <a class="site-navigation-link" href="#" aria-label="Ссылка на инструкцию как заказать">Как заказать</a>
       </li>
       <li>
-        <a href="#">Контакты</a>
+        <a class="site-navigation-link" href="#" aria-label="Ссылка на контакты">Контакты</a>
       </li>
     </ul>
     <ul class="footer-social">

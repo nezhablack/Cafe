@@ -1,0 +1,346 @@
+body {
+    min-width: 1220px;
+    padding: 0 75px;
+    font-family: "Monserrat", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    background-color: #fbebea;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.navigation-positioner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header-site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 900px;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.logo {
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+.site-navigation-link {
+    position: relative;
+    color: #2d2829;
+}
+
+.site-navigation-link:hover {
+    color:  #f50049;
+}
+
+.site-navigation-link:active {
+    color: #9b6670;
+}
+
+.site-navigation-link::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(245, 0, 73, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s, background-color 0.1s;
+    transform: translateY(10px);
+}
+
+.site-navigation-link:hover::after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.site-navigation-link:active::after {
+    background-color: #9b6670;
+}
+
+.header-contacts {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 700;
+    list-style: none;
+}
+
+.cafe-description .container {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background-image: url("../img/strawberries-background.png");
+    background-position: 220px 5px;
+    background-repeat: no-repeat;
+}
+
+.cafe-description-title {
+    width: 355px;
+    margin: 0;
+    padding: 0;
+    padding-right: 100px;
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 78px;
+    line-height: 88px;
+    font-weight: 700;
+}
+
+.cafe-main-image {
+    position: absolute;
+    top: -55px;
+    left: 450px;
+    z-index: -1;
+}
+
+.additional-info {
+    font-family: "Caveat", Times, serif;
+    font-size: 40px;
+    line-height: 78px;
+    font-weight: 400;
+}
+
+.button {
+    display: block;
+    padding: 12px 20px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background-color: #f50049;
+    border-radius: 50px;
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:active {  
+    transform: scale(0.97);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-choice {
+    box-sizing: border-box;
+    width: 170px;
+    margin-top: 55px;
+}
+
+.cafe-advantage {
+    width: 485px;
+    margin: 0;
+    margin-top: 140px;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.cafe-advantage-item {
+    position: relative;
+    width: 175px;
+}
+
+.cafe-advantage-item::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -70px;
+    width: 55px;
+    height: 55px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cafe-advantage-ingridient {
+    margin-left: 70px;
+}
+
+.cafe-advantage-ingridient::before {
+    background-image: url("../img/cereal.png");
+}
+
+.cafe-advantage-delivery {
+    margin-left: auto;
+}
+
+.cafe-advantage-delivery::before {
+    background-image: url("../img/gift-delivery.png");
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 40px;
+    line-height: 66px;
+    font-weight: 700;
+}
+
+.cafe-assortment-list {
+    display: grid;
+    grid-template-columns: 230px 260px 35px 170px 35px 260px 230px;
+    grid-template-rows: repeat(4, 305px);
+    grid-row-gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cafe-assortment-item {
+    position: relative;
+    padding: 30px;
+}
+
+.cafe-assortment-classic {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.cafe-assortment-muss {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.cafe-assortment-wedding { 
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.cafe-assortment-mens { 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;  
+}
+
+.cafe-assortment-womens {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;   
+}
+
+.cafe-assortment-childs { 
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 5;  
+}
+
+.cakes-title {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.cakes-types {
+    color: #2d2829;
+}
+
+.cakes-info-link {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 135px;
+    margin-left: 280px;
+    padding: 25px;
+    color: #000000;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s, opacity 0.3s;
+}
+
+.cakes-info-link:hover {
+    transform: scale(1.1);
+}
+
+.cakes-info-link:active {
+    transform: scale(1);
+    color: rgba(0, 0, 0, 0.7);
+    opacity: 0.3;
+}
+
+.cakes-info-link::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 125px;
+    width: 17px;
+    height: 12px;
+    background-image: url("../img/arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.big-image-link {
+    margin-top: 475px;
+    margin-left: 480px;
+}
+
+.cakes-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
