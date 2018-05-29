@@ -344,3 +344,232 @@ a {
     left: 0;
     z-index: -1;
 }
+
+.custom-cakes {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.custom-cakes .section-title {
+    margin-bottom: 10px;
+}
+
+.steps-item {
+    position: relative;
+    margin-top: 40px;
+    padding: 85px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
+}
+
+.filling-slider-btn {
+    position: absolute;
+    z-index: 5;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.filling-slider-btn:hover {
+    transform: scale(1.2);
+}
+
+.filling-slider-btn:active {
+    transform: scale(1);
+    opacity: 0.4;
+}
+
+.slider-btn-1 {
+    top: 255px;
+    left: 200px;
+    background-image: url("../img/arrow-left.png");
+}
+
+.slider-btn-2 {
+    top: 255px;
+    right: 155px;
+    background-image: url("../img/arrow-right.png");
+}
+
+.steps-title {
+    position: relative;
+    width: 170px;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 27px;
+    line-height: 37px;
+    color: #f50049;
+}
+
+.steps-title-1::before {
+    content: "01";
+    position: absolute;
+    top: -55px;
+    left: 0;
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 50px;
+    line-height: 60px;
+    color: #f50049;
+}
+
+.filling-slider-slide {
+    display: none;
+}
+
+.filling-slide-active {
+    display: block;
+}
+
+.filling-layout {
+    display: flex;
+}
+
+.cake-filling-image {
+    width: 343px;
+    height: 390px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.filling-positioner {
+    width: 290px;
+    padding: 60px 0;
+}
+
+.filling-name {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.filling-description {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0
+}
+
+.filling-price {
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 27px;
+    line-height: 37px;
+}
+
+.button-filling {
+    margin-top: 25px;
+    border: none;
+}
+
+.steps-title-2 {
+    margin-bottom: 40px;
+}
+
+.steps-title-2::before {
+    content: "02";
+    position: absolute;
+    top: -55px;
+    left: 0;
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 50px;
+    line-height: 60px;
+    color: #f50049;
+}
+
+.cake-size-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cake-size {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 3px dotted #000000;
+}
+
+.cake-size-tiny {
+    width: 110px;
+    height: 110px;
+}
+
+.cake-size-small {
+    width: 154px;
+    height: 154px;
+}
+
+.cake-size-normal {
+    width: 174px;
+    height: 174px;
+}
+
+.cake-size-normal::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: block;
+    width: 121px;
+    height: 121px;
+    border: 3px dotted #000000;
+    border-radius: 50%;
+}
+
+.cake-size-big {
+    width: 200px;
+    height: 200px;
+}
+
+.cake-size-big::before {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    display: block;
+    width: 96px;
+    height: 96px;
+    border: 3px dotted #000000;
+    border-radius: 50%;
+}
+
+.cake-size-big::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 23px;
+    display: block;
+    width: 145px;
+    height: 145px;
+    border: 3px dotted #000000;
+    border-radius: 50%;
+}
+
+.size-info {
+    display: block;
+    width: 185px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.steps-title-3::before {
+    content: "03";
+    position: absolute;
+    top: -55px;
+    left: 0;
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 50px;
+    line-height: 60px;
+    color: #f50049;
+}

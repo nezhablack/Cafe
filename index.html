@@ -116,66 +116,83 @@
 
     <section class="custom-cakes">
       <div class="container">
-        <h2 id="individual-order" class="section-title">Индивидуальный заказ</h2>
+        <h2 class="section-title">Индивидуальный заказ</h2>
         <span class="additional-info custom-cakes-steps">Соберите торт в 3 шага</span>
         <form>
           <section class="steps-item">
-            <h3 class="steps-title">Начинка</h3>
+            <h3 class="visually-hidden">Начинка</h3>
             <div class="filling-slider-controls">
               <div class="filling-slider-btn slider-btn-1" tabindex="0"></div>
               <div class="filling-slider-btn slider-btn-2" tabindex="0"></div>
             </div>
             <section class="filling-slider-slide filling-slide-1 filling-slide-active">
-              <img class="cake-filling-image" src="img/chocolate-filling.jpg" width="343" height="390" alt="Шоколадный ганаш">
-              <h4>Шоколадный ганаш</h4>
-              <p>Ароматный шоколадный бисквит, густой шоколадный крем &mdash; самый шоколадный из всех возможных десертов!</p>
-              <b class="cake-filling-price">1000 руб/кг</b>
-              <button type="button" class="button button-filling" data-hover="Выбрать">Выбрать</button>
+              <div class="filling-layout">
+                <h4 class="steps-title steps-title-1">Начинка</h4>
+                <img class="cake-filling-image" src="img/chocolate-filling.jpg" width="343" height="390" alt="Шоколадный ганаш">
+                <div class="filling-positioner">
+                  <h5 class="filling-name">Шоколадный ганаш</h5>
+                  <p class="filling-description">Ароматный шоколадный бисквит, густой шоколадный крем &mdash; самый шоколадный из всех возможных десертов!</p>
+                  <b class="filling-price">1000 руб/кг</b>
+                  <button type="button" class="button button-filling" data-hover="Выбрать">Выбрать</button>
+                </div>
+              </div>
             </section>
             <section class="filling-slider-slide filling-slide-2">
-              <img class="cake-filling-image" src="img/strawberry-filling.jpg" width="343" height="390" alt="Клубничный мусс">
-              <h4>Клубничный мусс</h4>
-              <p>Нежный классический бисквит и воздушный клубничный мусс понравится всем без исключения!</p>
-              <b class="cake-filling-price">800 руб/кг</b>
-              <button type="button" class="button button-filling" data-hover="Выбрать">Выбрать</button>
+              <div class="filling-layout">
+                <img class="cake-filling-image" src="img/strawberry-filling.jpg" width="343" height="390" alt="Клубничный мусс">
+                <div class="filling-positioner">
+                  <h5 class="filling-name">Клубничный мусс</h5>
+                  <p class="filling-description">Нежный классический бисквит и воздушный клубничный мусс понравится всем без исключения!</p>
+                  <b class="filling-price">800 руб/кг</b>
+                  <button type="button" class="button button-filling" data-hover="Выбрать">Выбрать</button>
+                </div>
+              </div>
             </section>
             <section class="filling-slider-slide filling-slide-3">
-              <img class="cake-filling-image" src="img/lemon-filling.jpg" width="343" height="390" alt="Лимонный фреш">
-              <h4>Лимонный фреш</h4>
-              <p>Классический бисквит, освежающий лимонный курд украсит праздник любого гурмана</p>
-              <b class="cake-filling-price">1000 руб/кг</b>
-              <button type="button" class="button button-filling" data-hover="Выбрать">Выбрать</button>
+              <div class="filling-layout">
+                <img class="cake-filling-image" src="img/lemon-filling.jpg" width="343" height="390" alt="Лимонный фреш">
+                <div class="filling-positioner">
+                  <h5 class="filling-name">Лимонный фреш</h5>
+                  <p class="filling-description">Классический бисквит, освежающий лимонный курд украсит праздник любого гурмана</p>
+                  <b class="filling-price">1000 руб/кг</b>
+                  <button type="button" class="button button-filling" data-hover="Выбрать">Выбрать</button>
+                </div>
+              </div>
             </section>
           </section>
-          <section class="steps-item">
-            <h3 class="steps-title">Размер</h3>
-            <p class="cake-size">
-              <label class="cake-size-tiny">1 кг
-                <input class="visually-hidden" type="radio" name="size">
-              </label>
-              <span>17-18 см (6 персон)</span>
-            </p>
-            <p class="cake-size">
-              <label class="cake-size-small">2кг
-                <input class="visually-hidden" type="radio" name="size">
-              </label>
-              <span>23-24 см (10-12 персон)</span>
-            </p>
-            <p class="cake-size">
-              <label class="cake-size-normal">5 кг
-                <input class="visually-hidden" type="radio" name="size">
-              </label>
-              <span>Два яруса 25 и 20 см (15-20 персон)</span>
-            </p>
-            <p class="cake-size">
-              <label class="cake-size-big">8 кг
-                <input class="visually-hidden" type="radio" name="size">
-              </label>
-              <span>Три яруса 30, 25 и 18 см (25-30 персон)</span>
-            </p>
+
+          <section class="steps-item steps-item-2">
+            <h3 class="steps-title steps-title-2">Размер</h3>
+            <ul class="cake-size-list">
+              <li class="cake-size-item">
+                <label class="cake-size cake-size-tiny">1 кг
+                  <input class="visually-hidden" type="radio" name="size">
+                </label>
+                <span class="size-info">17-18 см <br>(6 персон)</span>
+              </li>
+              <li class="cake-size-item">
+                <label class="cake-size cake-size-small">2кг
+                  <input class="visually-hidden" type="radio" name="size">
+                </label>
+                <span class="size-info">23-24 см <br>(10-12 персон)</span>
+              </li>
+              <li class="cake-size-item">
+                <label class="cake-size cake-size-normal">5 кг
+                  <input class="visually-hidden" type="radio" name="size">
+                </label>
+                <span class="size-info">Два яруса 25 и 20 см <br>(15-20 персон)</span>
+              </li>
+              <li class="cake-size-item">
+                <label class="cake-size cake-size-big">8 кг
+                  <input class="visually-hidden" type="radio" name="size">
+                </label>
+                <span class="size-info">Три яруса 30, 25 и 18 см <br>(25-30 персон)</span>
+              </li>
+            </ul>
           </section>
+
           <section class="steps-item">
-            <h3 class="steps-title">Оформление</h3>
+            <h3 class="steps-title steps-title-3">Оформление</h3>
             <div class="decoration-slider-controls">
               <div class="decoration-slider-btn slider-btn-1" tabindex="0"></div>
               <div class="decoration-slider-btn slider-btn-2" tabindex="0"></div>
