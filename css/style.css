@@ -1,6 +1,5 @@
 body {
     min-width: 1220px;
-    padding: 0 75px;
     font-family: "Monserrat", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -37,6 +36,7 @@ a {
 .container {
     width: 1220px;
     margin: 0 auto;
+    padding: 0 75px;
 }
 
 .navigation-positioner {
@@ -125,6 +125,7 @@ a {
 .cafe-description-title {
     width: 355px;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     padding-right: 100px;
     font-family: "IBM Plex Serif", Times, serif;
@@ -141,15 +142,17 @@ a {
 }
 
 .additional-info {
+    display: block;
+    margin-bottom: 10px;
     font-family: "Caveat", Times, serif;
     font-size: 40px;
-    line-height: 78px;
+    line-height: 55px;
     font-weight: 400;
 }
 
 .button {
     display: block;
-    padding: 12px 20px;
+    padding: 12px 25px;
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 13px;
     line-height: 27px;
@@ -161,6 +164,7 @@ a {
     border-radius: 50px;
     transition: color 0.3s, transform 0.3s;
     cursor: pointer;
+    border: none;
 }
 
 .button:hover {
@@ -186,13 +190,14 @@ a {
     display: flex;
     flex-wrap: nowrap;
     list-style: none;
+    font-family: "Montserrat", Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
 }
 
 .cafe-advantage-item {
     position: relative;
-    width: 175px;
+    width: 196px;
 }
 
 .cafe-advantage-item::before {
@@ -239,6 +244,7 @@ a {
     grid-row-gap: 40px;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
     list-style: none;
 }
 
@@ -291,12 +297,13 @@ a {
 
 .cakes-title {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     padding: 0;
 }
 
 .cakes-types {
-    color: #2d2829;
+    font-size: 16px;
+    color: #352f30;
 }
 
 .cakes-info-link {
@@ -343,11 +350,11 @@ a {
     top: 0;
     left: 0;
     z-index: -1;
+    box-shadow: 0px 10px 13px 0.26px rgba(163, 6, 60, 0.05);
 }
 
 .custom-cakes {
     padding-top: 100px;
-    padding-bottom: 150px;
 }
 
 .custom-cakes .section-title {
@@ -356,10 +363,11 @@ a {
 
 .steps-item {
     position: relative;
+    z-index: 0;
     margin-top: 40px;
     padding: 85px;
     background-color: #ffffff;
-    box-shadow: 0px 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
+    box-shadow: 0px 5px 13px 0.26px rgba(163, 6, 60, 0.1);
 }
 
 .filling-slider-btn {
@@ -441,6 +449,7 @@ a {
 .filling-positioner {
     width: 290px;
     padding: 60px 0;
+    font-family: "Montserrat", Arial, sans-serif;
 }
 
 .filling-name {
@@ -464,11 +473,6 @@ a {
 
 .button-filling {
     margin-top: 25px;
-    border: none;
-}
-
-.steps-title-2 {
-    margin-bottom: 40px;
 }
 
 .steps-title-2::before {
@@ -491,11 +495,22 @@ a {
     list-style: none;
 }
 
+.cake-size-input:hover + .cake-size {
+    box-shadow: 1px 6px 16px 1px rgba(103, 12, 40, 0.3);
+    cursor: pointer;
+}
+
+.cake-size-input:checked + .cake-size {
+    box-shadow: 1px 1px 16px 1px rgba(103, 12, 40, 0.8);
+}
+
 .cake-size {
     position: relative;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 20px;
     border-radius: 50%;
     border: 3px dotted #000000;
 }
@@ -560,7 +575,15 @@ a {
     display: block;
     width: 185px;
     margin-top: 20px;
-    font-size: 16px;
+    padding-left: 15px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 15px;
+}
+
+.steps-item-decoration {
+    background-image: url("../img/cake-slice-bg.png");
+    background-position: 5px 220px;
+    background-repeat: no-repeat;
 }
 
 .steps-title-3::before {
@@ -572,4 +595,696 @@ a {
     font-size: 50px;
     line-height: 60px;
     color: #f50049;
+}
+
+.decoration-slider-btn {
+    position: absolute;
+    z-index: 5;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.decoration-slider-btn:hover {
+    transform: scale(1.2);
+}
+
+.decoration-slider-btn:active {
+    transform: scale(1);
+    opacity: 0.4;
+}
+
+.decoration-slider-btn-1 {
+    top: 255px;
+    left: 250px;
+    background-image: url("../img/arrow-left.png");
+}
+
+.decoration-slider-btn-2 {
+    top: 255px;
+    right: 90px;
+    background-image: url("../img/arrow-right.png");
+}
+
+.decoration-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 695px;
+    margin: 0;
+    margin-left: 260px;
+    margin-bottom: 75px;
+    padding: 0;
+    list-style: none;
+}
+
+.decoration-item {
+    position: relative;
+    width: 320px;
+    padding-top: 230px;
+    padding-bottom: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.decoration-item:hover {
+    box-shadow: 2px 7px 13px 1px rgba(0, 0, 0, 0.1);
+}
+
+.decoration-item:active {
+    transform: scale(0.9);
+}
+
+.decoration-image {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: -1;
+    box-shadow: 0px 7px 13px 1px rgba(0, 0, 0, 0.05);
+}
+
+.decoration-title {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.decoration-price {
+    display: block;
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+}
+  
+.custom-cake-title {
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 27px;
+    line-height: 37px;
+}
+
+.custom-cake-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.custom-filling {
+    width: 240px;
+}
+
+.custom-size {
+    width: 130px;
+}
+
+.custom-decoration {
+    width: 230px;
+}
+
+.custom-choice-title {
+    display: block;
+    font-family: "Caveat", Times, serif;
+    font-size: 40px;
+    line-height: 78px;
+    font-weight: 400;
+    color: #f50049;
+}
+
+.custom-choice {
+    display: block;
+    padding-bottom: 10px;
+    width: 100%;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid #c1b0af;
+}
+
+.feedback {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.feedback .container {
+    position: relative;
+    padding-top: 100px;
+    background-image: url("../img/review-decoration.png");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.feedback .section-title {
+    text-align: center;
+}
+
+.feedback-slider-btn {
+    position: absolute;
+    z-index: 5;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.feedback-slider-btn:hover {
+    transform: scale(1.2);
+}
+
+.feedback-slider-btn:active {
+    transform: scale(1);
+    opacity: 0.4;
+}
+
+.feedback-slider-btn-1 {
+    top: 255px;
+    left: 200px;
+    background-image: url("../img/arrow-left.png");
+}
+
+.feedback-slider-btn-2 {
+    top: 255px;
+    right: 155px;
+    background-image: url("../img/arrow-right.png");
+}
+
+.customer-feedback {
+    position: relative;
+    display: none;
+    width: 450px;
+    margin-left: 280px;
+    padding-left: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.customer-feedback-active {
+    display: block;
+}
+
+.customer-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+}
+
+.company-info {
+    padding-top: 100px;
+}
+
+.company-info .container {
+    position: relative;
+    background-image: url("../img/berries-bg.png");
+    background-position: 475px 0;
+    background-repeat: no-repeat;
+}
+
+.company-info-list {
+    width: 450px;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.company-info-motto {
+    font-weight: 700;
+}
+
+.company-info-description {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.company-image {
+    position: absolute;
+    top: 0;
+    left: -140px;
+}
+
+.company-image-mask {
+    position: absolute;
+    top: 0;
+    right: 45px;
+    width: 510px;
+    height: 510px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.company-social {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 155px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-link {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+
+.company-social-button {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s, opacity 0.3s;
+}
+
+.company-social-button:nth-child(3n) {
+    margin-right: 0;
+}
+
+.company-social-button:hover {
+  box-shadow: 0px 2px 7px 1px rgba(255, 0, 67, 0.2);
+}
+
+.company-social-button:active {
+    opacity: 0.3;
+}
+
+.company-social-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.social-instagram::before {
+    background-image: url("../img/instagram.png");
+}
+
+.social-vk::before {
+    top: -2px;
+    left: -2px;
+    background-image: url("../img/vk.png");
+}
+
+.social-twitter::before {
+    background-image: url("../img/twitter.png");
+}
+
+.pastry-chef-quote {
+    position: relative;
+    width: 555px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    margin-bottom: 160px;
+    padding: 0;
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pastry-chef-quote::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    left: 245px;
+    width: 65px;
+    height: 50px;
+    background-image: url("../img/commas.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pastry-chef-quote::after {
+    content: "";
+    position: absolute;
+    top: 105px;
+    left: 180px;
+    width: 155px;
+    height: 80px;
+    background-image: url("../img/signature.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.company-advantages .container {
+    padding-bottom: 110px;
+    background-image: url("../img/berries-advantage.png");
+    background-position: 490px 25px;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+.company-advantage-list {
+    width: 445px;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-left: 45px;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.company-advantage-motto {
+    position: relative;
+    font-weight: 700;
+}
+
+.company-advantage-motto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -45px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/cereal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.company-advantage-description {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.order {
+    padding-top: 120px;
+    padding-bottom: 260px;
+    color: #ffffff;
+    background-color: #da2e35;
+    background-image: url("../img/delivery.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-order-title {
+    margin-left: 750px;
+}
+
+.order-list {
+    width: 350px;
+    margin: 0;
+    margin-left: 800px;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    list-style: none;
+}
+
+.order-item {
+    position: relative;
+}
+
+.order-item::before {
+    position: absolute;
+    top: -7px;
+    left: -50px;
+    font-family: "IBM Plex Serif", Times, serif;
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff
+}
+
+.order-terms::before {
+    content: "1";
+}
+
+.order-city-delivery::before {
+    content: "2";
+}
+
+.order-delivery::before {
+    content: "3";
+}
+
+.company-order-motto {
+    font-weight: 700;
+}
+
+.company-order-description {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.contacts {
+    padding-top: 70px;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.contacts .container {
+    padding-bottom: 350px;
+    background-image: url("../img/strawberry.jpg");
+    background-position: 285px 395px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.question-layout {
+    display: flex;
+    align-items: baseline;
+}
+
+.question-form {
+    width: 555px;
+    margin-top: 25px;
+    margin-right: 90px;
+}
+
+.question-introduction {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.question-field {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+}
+
+.question-field:hover {
+    border-bottom: 1px solid #c9bcbb;
+}
+
+.question-field:focus {
+    border-bottom: 1px solid #da2e35;
+    outline: none;
+}
+
+.question-form-button {
+    margin-top: 40px;
+}
+
+.contacts-info {
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-info-more {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.contacts-social {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts-social-button {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s, opacity 0.3s;
+}
+
+.contacts-social-button:nth-child(3n) {
+    margin-right: 0;
+}
+
+.contacts-social-button:hover {
+  box-shadow: 0px 2px 7px 1px rgba(255, 0, 67, 0.2);
+}
+
+.contacts-social-button:active {
+    opacity: 0.3;
+}
+
+.contacts-social-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.contacts-social-instagram::before {
+    background-image: url("../img/instagram.png");
+}
+
+.contacts-social-vk::before {
+    top: -2px;
+    left: -2px;
+    background-image: url("../img/vk.png");
+}
+
+.contacts-social-twitter::before {
+    background-image: url("../img/twitter.png");
+}
+
+.main-footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #e8e8e8;
+}
+
+.footer-layout {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.footer-site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 900px;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.footer-site-navigation .site-navigation-link:hover {
+    color: #000000;
+}
+
+.footer-site-navigation .site-navigation-link:active {
+    opacity: 0.3;
+}
+
+.footer-site-navigation .site-navigation-link::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s, background-color 0.1s;
+    transform: translateY(10px);
+}
+
+.footer-site-navigation .site-navigation-link:hover::after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.footer-site-navigation .site-navigation-link:active::after {
+    opacity: 0.3;
+}
+
+.footer-social {
+    display: flex;
+    width: 90px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-social-button {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s, opacity 0.3s;
+}
+
+.footer-social-button:nth-child(3n) {
+    margin-right: 0;
+}
+
+.footer-social-button:hover {
+  box-shadow: 0px 2px 7px 1px rgba(255, 255, 255, 0.2);
+}
+
+.footer-social-button:active {
+    opacity: 0.3;
+}
+
+.footer-social-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.footer-social-instagram::before {
+    background-image: url("../img/instagram-grey.png");
+}
+
+.footer-social-vk::before {
+    background-image: url("../img/vk-grey.png");
+}
+
+.footer-copyright {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #a1a1a1;
 }

@@ -81,7 +81,7 @@
           <li class="cafe-assortment-item cafe-assortment-wedding">
             <h3 class="cakes-title">Свадебные</h3>
             <span class="cakes-types">20 видов</span>
-            <img class="cakes-image" src="img/wedding-cake.jpg" width="490" height="304" alt="Свадебный торт">
+            <img class="cakes-image" src="img/wedding-cake.jpg" width="490" height="307" alt="Свадебный торт">
             <a href="" class="cakes-info-link" aria-label="Кнопка Смотреть свадебные торты">
               <span class="visually-hidden">Смотреть</span>
             </a>
@@ -96,15 +96,15 @@
           </li>
           <li class="cafe-assortment-item cafe-assortment-womens">
             <h3 class="cakes-title">Женщинам</h3>
-            <span class="cakes-type">16 видов</span>
-            <img class="cakes-image" src="img/womens-cake.jpg" width="490" height="304" alt="Торт для женщин">
+            <span class="cakes-types">16 видов</span>
+            <img class="cakes-image" src="img/womens-cake.jpg" width="490" height="307" alt="Торт для женщин">
             <a href="" class="cakes-info-link" aria-label="Кнопка Смотреть торты для женщин">
               <span class="visually-hidden">Смотреть</span>
             </a>
           </li>
           <li class="cafe-assortment-item cafe-assortment-childs">
             <h3 class="cakes-title">Детские</h3>
-            <span class="cakes-type">18 видов</span>
+            <span class="cakes-types">18 видов</span>
             <img class="cakes-image childs-image" src="img/childrens-cake.jpg" width="695" height="651" alt="Торт для детей">
             <a href="" class="cakes-info-link big-image-link" aria-label="Кнопка Смотреть торты для детей">
               <span class="visually-hidden">Смотреть</span>
@@ -125,6 +125,7 @@
               <div class="filling-slider-btn slider-btn-1" tabindex="0"></div>
               <div class="filling-slider-btn slider-btn-2" tabindex="0"></div>
             </div>
+
             <section class="filling-slider-slide filling-slide-1 filling-slide-active">
               <div class="filling-layout">
                 <h4 class="steps-title steps-title-1">Начинка</h4>
@@ -137,6 +138,7 @@
                 </div>
               </div>
             </section>
+
             <section class="filling-slider-slide filling-slide-2">
               <div class="filling-layout">
                 <img class="cake-filling-image" src="img/strawberry-filling.jpg" width="343" height="390" alt="Клубничный мусс">
@@ -148,6 +150,7 @@
                 </div>
               </div>
             </section>
+
             <section class="filling-slider-slide filling-slide-3">
               <div class="filling-layout">
                 <img class="cake-filling-image" src="img/lemon-filling.jpg" width="343" height="390" alt="Лимонный фреш">
@@ -165,87 +168,89 @@
             <h3 class="steps-title steps-title-2">Размер</h3>
             <ul class="cake-size-list">
               <li class="cake-size-item">
-                <label class="cake-size cake-size-tiny">1 кг
-                  <input class="visually-hidden" type="radio" name="size">
-                </label>
-                <span class="size-info">17-18 см <br>(6 персон)</span>
+                <input class="visually-hidden cake-size-input" id="tiny" type="radio" name="size">
+                <label class="cake-size cake-size-tiny" for="tiny">1 кг</label>
+                <span class="size-info">17-18 см
+                  <br>(6 персон)</span>
               </li>
               <li class="cake-size-item">
-                <label class="cake-size cake-size-small">2кг
-                  <input class="visually-hidden" type="radio" name="size">
-                </label>
-                <span class="size-info">23-24 см <br>(10-12 персон)</span>
+                <input class="visually-hidden cake-size-input" type="radio" name="size" id="small">
+                <label class="cake-size cake-size-small" for="small">2кг</label>
+                <span class="size-info">23-24 см
+                  <br>(10-12 персон)</span>
               </li>
               <li class="cake-size-item">
-                <label class="cake-size cake-size-normal">5 кг
-                  <input class="visually-hidden" type="radio" name="size">
-                </label>
-                <span class="size-info">Два яруса 25 и 20 см <br>(15-20 персон)</span>
+                <input class="visually-hidden cake-size-input" type="radio" name="size" id="normal">
+                <label class="cake-size cake-size-normal" for="normal">5 кг</label>
+                <span class="size-info">Два яруса 25 и 20 см
+                  <br>(15-20 персон)</span>
               </li>
               <li class="cake-size-item">
-                <label class="cake-size cake-size-big">8 кг
-                  <input class="visually-hidden" type="radio" name="size">
-                </label>
-                <span class="size-info">Три яруса 30, 25 и 18 см <br>(25-30 персон)</span>
+                <input class="visually-hidden cake-size-input" type="radio" name="size" id="big">
+                <label class="cake-size cake-size-big" for="big">8 кг</label>
+                <span class="size-info">Три яруса 30, 25 и 18 см
+                  <br>(25-30 персон)</span>
               </li>
             </ul>
           </section>
 
-          <section class="steps-item">
+          <section class="steps-item steps-item-decoration">
             <h3 class="steps-title steps-title-3">Оформление</h3>
             <div class="decoration-slider-controls">
-              <div class="decoration-slider-btn slider-btn-1" tabindex="0"></div>
-              <div class="decoration-slider-btn slider-btn-2" tabindex="0"></div>
+              <div class="decoration-slider-btn decoration-slider-btn-1" tabindex="0"></div>
+              <div class="decoration-slider-btn decoration-slider-btn-2" tabindex="0"></div>
             </div>
-            <p class="decoration-item decoration-berry">
-              <img src="img/berry-decoration.jpg" width="321" height="431" alt="Ягодное ассорти">
-              <h4 class="decoration-title">Ягодное ассорти</h4>
-              <span class="decoration-price">700 руб/кг</span>
-            </p>
-            <p class="decoration-item decoration-marshmellow">
-              <img src="img/marshmallow-decoration.jpg" width="321" height="431" alt="Маршмэллоу">
-              <h4 class="decoration-title">Маршмэллоу</h4>
-              <span class="decoration-price">700 руб/кг</span>
-            </p>
+            <ul class="decoration-list">
+              <li class="decoration-item decoration-berry" tabindex="0">
+                <img class="decoration-image" src="img/berry-decoration.jpg" width="321" height="431" alt="Ягодное ассорти">
+                <h4 class="decoration-title">Ягодное ассорти</h4>
+                <span class="decoration-price">700 руб/кг</span>
+              </li>
+              <li class="decoration-item decoration-marshmellow" tabindex="0">
+                <img class="decoration-image" src="img/marshmallow-decoration.jpg" width="321" height="431" alt="Маршмэллоу">
+                <h4 class="decoration-title">Маршмэллоу</h4>
+                <span class="decoration-price">700 руб/кг</span>
+              </li>
+            </ul>
+            <section class="custom-cake">
+              <h4 class="custom-cake-title">Ваш выбор</h4>
+              <div class="custom-cake-list">
+                <div class="custom-cake-item custom-filling">
+                  <span class="custom-choice-title">Начинка</span>
+                  <span class="custom-choice">Шоколадный ганаш</span>
+                </div>
+                <div class="custom-cake-item custom-size">
+                  <span class="custom-choice-title">Размер</span>
+                  <span class="custom-choice">2 кг</span>
+                </div>
+                <div class="custom-cake-item custom-decoration">
+                  <span class="custom-choice-title">Оформление</span>
+                  <span class="custom-choice">Маршмэллоу</span>
+                </div>
+                <div class="custom-cake-item">
+                  <button type="submit" class="button custom-choice-button" data-hover="Заказать торт">Заказать торт</button>
+                </div>
+              </div>
+            </section>
           </section>
-          <section>
-            <h3>Ваш выбор</h3>
-            <p class="custom-filling">
-              <span class="custom-choice-title">Начинка</span>
-              <span class="custom-choice">Шоколадный ганаш</span>
-            </p>
-            <p class="custom-size">
-              <span class="custom-choice-title">Размер</span>
-              <span class="custom-choice">2 кг</span>
-            </p>
-            <p class="custom-decoration">
-              <span class="custom-choice-title">Оформление</span>
-              <span class="custom-choice">Маршмэллоу</span>
-            </p>
-          </section>
-          <button type="submit" class="button custom-choice-button" data-hover="Заказать торт">Заказать торт</button>
         </form>
       </div>
     </section>
 
     <section class="feedback">
       <div class="container">
-        <h2 id="feedbacks" class="section-title">Отзывы</h2>
+        <h2 class="section-title">Отзывы</h2>
         <div class="feedback-slider-controls">
-          <div class="feedback-slider-btn slider-btn-1" tabindex="0"></div>
-          <div class="feedback-slider-btn slider-btn-2" tabindex="0"></div>
+          <div class="feedback-slider-btn feedback-slider-btn-1" tabindex="0"></div>
+          <div class="feedback-slider-btn feedback-slider-btn-2" tabindex="0"></div>
         </div>
-        <section class="customer-feedback customer-feedback-1">
+        <section class="customer-feedback customer-feedback-1 customer-feedback-active">
           <img src="img/customer-photo.jpg" class="customer-photo" width="401" height="400" alt="Фотография клиента Марии">
           <b class="customer-name">Мария</b>
           <span class="customer-info">юрист, 33 года</span>
-          <p class="customer-review">Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь
-            будем заказывать торты только у вас для наших семейных праздников:)
+          <p class="customer-review">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь
+            будем заказывать торты только у вас для наших семейных праздников :)
           </p>
-          <details>
-            <summary class="feedback-more">Развернуть</summary>
-            <p class="customer-review-more">Мне все очень понравиось</p>
-          </details>
         </section>
         <section class="customer-feedback customer-feedback-2">
           <img src="img/customer-photo.jpg" class="customer-photo" width="401" height="400" alt="Фотография клиента Петра">
@@ -254,10 +259,6 @@
           <p class="customer-review">Заказывал торт брауни.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать
             торты только у вас для наших семейных праздников:)
           </p>
-          <details>
-            <summary class="feedback-more">Развернуть</summary>
-            <p class="customer-review-more">Мне все очень понравиось</p>
-          </details>
         </section>
         <section class="customer-feedback customer-feedback-3">
           <img src="img/customer-photo.jpg" class="customer-photo" width="401" height="400" alt="Фотография клиента Васи">
@@ -266,10 +267,6 @@
           <p class="customer-review">Заказывал торт лимоный на свой др.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем
             заказывать торты только у вас для наших семейных праздников:)
           </p>
-          <details>
-            <summary class="feedback-more">Развернуть</summary>
-            <p class="customer-review-more">Мне все очень понравиось</p>
-          </details>
         </section>
       </div>
     </section>
@@ -305,10 +302,10 @@
             </a>
           </li>
         </ul>
-        <img src="img/chefs-photo.jpg" width="809" height="539" alt="Фотография главного кондитера Павла">
-        <blockquote class="pastry-chef-quote">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное
-          блюдо.
-        </blockquote>
+        <div class="company-image-mask">
+          <img class="company-image" src="img/chefs-photo.jpg" width="809" height="539" alt="Фотография главного кондитера Павла">
+        </div>
+        <blockquote class="pastry-chef-quote">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное</blockquote>
       </div>
     </section>
 
@@ -316,13 +313,13 @@
       <div class="container">
         <h2 class="section-title">Наши преимущества</h2>
         <span class="additional-info reasons">Почему нас выбирают?</span>
-        <dl class="company-info-list ">
-          <dt class="company-info-motto">Без искусственных добавок</dt>
-          <dd class="company-info-description">Работаем с натуральными ингредиентами и свежими продуктами</dd>
-          <dt class="company-info-motto">Свежий торт в день торжества</dt>
-          <dd class="company-info-description">Торты изготавливаются в течение суток до отправки</dd>
-          <dt class="company-info-motto">Забота о клиентах</dt>
-          <dd class="company-info-description">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас
+        <dl class="company-advantage-list">
+          <dt class="company-advantage-motto">Без искусственных добавок</dt>
+          <dd class="company-advantage-description">Работаем с натуральными ингредиентами и свежими продуктами</dd>
+          <dt class="company-advantage-motto">Свежий торт в день торжества</dt>
+          <dd class="company-advantage-description">Торты изготавливаются в течение суток до отправки</dd>
+          <dt class="company-advantage-motto">Забота о клиентах</dt>
+          <dd class="company-advantage-description">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас
             и для вашего события.</dd>
         </dl>
       </div>
@@ -334,16 +331,16 @@
         <!--Изменить раздел, так как называется как заказать, а все про доставку и сроки. Вообще не в тему-->
         <ol class="order-list">
           <li class="order-item order-terms">
-            <b class="company-info-motto">Срок заказа</b>
-            <p class="company-info-description">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
+            <b class="company-order-motto">Срок заказа</b>
+            <p class="company-order-description">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
           </li>
           <li class="order-item order-city-delivery">
-            <b class="company-info-motto">Доставка по городу</b>
-            <p class="company-info-description">Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</p>
+            <b class="company-order-motto">Доставка по городу</b>
+            <p class="company-order-description">Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</p>
           </li>
           <li class="order-item order-delivery">
-            <b class="company-info-motto">Доставка за городом</b>
-            <p class="company-info-description">Доставка за пределами города рассчитывается индивидуально.</p>
+            <b class="company-order-motto">Доставка за городом</b>
+            <p class="company-order-description">Доставка за пределами города рассчитывается индивидуально.</p>
           </li>
         </ol>
       </div>
@@ -353,80 +350,88 @@
       <div class="container">
         <h2 class="section-title section-contacts-title">Контакты</h2>
         <span class="additional-info">Остались вопросы?</span>
-        <div>
-          <span class="">Заполните форму ниже и наш кондитер свяжется с Вами</span>
+        <div class="question-layout">
           <form class="question-form">
-            <label class="visually-hidden">Ваше имя
-              <input type="text" name="name" placeholder="Ваше имя">
-            </label>
-            <label class="visually-hidden">Email адрес
-              <input type="text" name="email" placeholder="Email адрес">
-            </label>
-            <label class="visually-hidden">Ваш вопрос
-              <input type="text" name="question" placeholder="Ваш вопрос">
-            </label>
+            <span class="question-introduction">Заполните форму ниже и наш кондитер свяжется с Вами</span>
+            <label class="visually-hidden" for="question-name">Ваше имя</label>
+            <input class="question-field" type="text" name="name" id="question-name" placeholder="Ваше имя">
+            <label class="visually-hidden" for="question-emal">Email адрес</label>
+            <input class="question-field" type="text" name="email" id="question-email" placeholder="Email адрес">
+            <label class="visually-hidden" for="question">Ваш вопрос</label>
+            <input class="question-field" type="textarea" name="question" id="question" rows="1" placeholder="Ваш вопрос">
             <button class="button question-form-button" type="submit" data-hover="Отправить">Отправить</button>
           </form>
-        </div>
-        <div>
-          <p>Или позвоните по телефону:</br>
-            +7 906 899 92 96
-          </p>
-          <p>Наша почта: bakerybypavel@mail.ru</p>
-          <p>Мы в соц. сетях:</p>
-          <ul class="contacts-social">
-            <li class="contacts-social-button contacts-social-instagram">
-              <a href="#" aria-label="Ссылка на страницу компании в инстаграме">
-                <span class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
-            <li class="contacts-social-button contacts-social-vk">
-              <a href="#" aria-label="Ссылка на страницу компании во вконтакте">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-          </ul>
+          <div>
+            <p class="contacts-info">Или позвоните по телефону:</br>
+              +7 906 899 92 96
+            </p>
+            <p class="contacts-info contacts-info-more">Наша почта: bakery@mail.ru</p>
+            <p class="contacts-info">Мы в соц. сетях:</p>
+            <ul class="contacts-social">
+              <li class="contacts-social-button contacts-social-instagram">
+                <a href="#" aria-label="Ссылка на страницу компании в инстаграме">
+                  <span class="visually-hidden">Инстаграм</span>
+                </a>
+              </li>
+              <li class="contacts-social-button contacts-social-vk">
+                <a href="#" aria-label="Ссылка на страницу компании во вконтакте">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="contacts-social-button contacts-social-twitter">
+                <a href="#" aria-label="Ссылка на страницу компании в твиттере">
+                  <span class="visually-hidden">Твиттер</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
-    <ul class="header-site-navigation">
-      <li class="logo">Cakes</li>
-      <li>
-        <a class="site-navigation-link" href="#our-cakes" aria-label="Ссылка на торты компании">Наши торты</a>
-      </li>
-      <li>
-        <a class="site-navigation-link" href="#individual-order" aria-label="Ссылка на индивидуальный заказ">Индивидуальный заказ</a>
-      </li>
-      <li>
-        <a class="site-navigation-link" href="#feedbacks" aria-label="Ссылка на отзывы">Отзывы</a>
-      </li>
-      <li>
-        <a class="site-navigation-link" href="#about-us" aria-label="Ссылка на информацию о компании">О нас</a>
-      </li>
-      <li>
-        <a class="site-navigation-link" href="#" aria-label="Ссылка на инструкцию как заказать">Как заказать</a>
-      </li>
-      <li>
-        <a class="site-navigation-link" href="#" aria-label="Ссылка на контакты">Контакты</a>
-      </li>
-    </ul>
-    <ul class="footer-social">
-      <li class="footer-social-button footer-social-instagram">
-        <a href="#" aria-label="Ссылка на страницу компании в инстаграме">
-          <span class="visually-hidden">Инстаграм</span>
-        </a>
-      </li>
-      <li class="footer-social-button footer-social-vk">
-        <a href="#" aria-label="Ссылка на страницу компании во вконтакте">
-          <span class="visually-hidden">Вконтакте</span>
-        </a>
-      </li>
-    </ul>
-    <span class="footer-copyright">&copy; 2018 Cakes</span>
+    <div class="container">
+      <div class="footer-layout">
+        <span class="logo">Cakes</span>
+        <ul class="footer-site-navigation">
+          <li>
+            <a class="site-navigation-link" href="#our-cakes" aria-label="Ссылка на торты компании">Наши торты</a>
+          </li>
+          <li>
+            <a class="site-navigation-link" href="#individual-order" aria-label="Ссылка на индивидуальный заказ">Индивидуальный заказ</a>
+          </li>
+          <li>
+            <a class="site-navigation-link" href="#feedbacks" aria-label="Ссылка на отзывы">Отзывы</a>
+          </li>
+          <li>
+            <a class="site-navigation-link" href="#about-us" aria-label="Ссылка на информацию о компании">О нас</a>
+          </li>
+          <li>
+            <a class="site-navigation-link" href="#" aria-label="Ссылка на инструкцию как заказать">Как заказать</a>
+          </li>
+          <li>
+            <a class="site-navigation-link" href="#" aria-label="Ссылка на контакты">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer-social">
+          <li class="footer-social-button footer-social-instagram">
+            <a href="#" aria-label="Ссылка на страницу компании в инстаграме">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="footer-social-button footer-social-vk">
+            <a href="#" aria-label="Ссылка на страницу компании во вконтакте">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <hr>
+      <span class="footer-copyright">&copy; 2018 Cakes</span>
+    </div>
   </footer>
+
 </body>
 
 </html>
