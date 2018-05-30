@@ -1,5 +1,4 @@
 body {
-    min-width: 1220px;
     font-family: "Monserrat", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -992,6 +991,7 @@ a {
 }
 
 .order {
+    min-width: 1370px;
     padding-top: 120px;
     padding-bottom: 260px;
     color: #ffffff;
@@ -1171,6 +1171,7 @@ a {
 }
 
 .main-footer {
+    min-width: 1370px;
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: #e8e8e8;
